@@ -1,6 +1,8 @@
 # @kiyotd/kurage
 
-再利用したい関数、いつの間にか漂ってしまうので集めておきます。
+海に漂うクラゲのように散らばってしまった関数を集めておく場所。（再利用しそうな関数をまとめているだけ）
+
+<img src="https://github.com/kiyotd/kurage/assets/41136135/2e429270-6fa5-43f5-98be-de590d927688" width="50%" >
 
 ## インストール
 
@@ -83,7 +85,7 @@ CDN
     isIPv4("255.255.255.256"); // false
     ```
 
-他の関数は [ドキュメント](https://kurage-utils.vercel.app/) を見てください。
+他の関数は [ドキュメント](https://kurage-utils.vercel.app/) を参照してください。
 
 ## License
 
