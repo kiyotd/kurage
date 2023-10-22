@@ -1,8 +1,8 @@
 {
-  "name": "@kiyotd/kurage",
-  "version": "0.1.1",
+  "name": "@kiyotd/kurage-utils",
+  "version": "0.1.2",
   "main": "dist/index.js",
-  "description": "Utility",
+  "description": "Collection of utility functions.",
   "license": "MIT",
   "private": false,
   "publishConfig": {
@@ -13,7 +13,7 @@
   "homepage": "https://kiyotd-kurage.vercel.app/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kiyotd/kurage.git"
+    "url": "git+https://github.com/kiyotd/kurage-utils.git"
   },
   "bugs": {
     "url": "https://github.com/kiyotd/kurage/issues"

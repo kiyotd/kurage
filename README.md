@@ -1,27 +1,27 @@
-# @kiyotd/kurage
+# kurage-utils
 
-海に漂うクラゲのように散らばってしまった関数を集めておく場所。（再利用しそうな関数をまとめているだけ）
+Collection of utility functions.
 
-<img src="https://github.com/kiyotd/kurage/assets/41136135/2e429270-6fa5-43f5-98be-de590d927688" width="50%" >
+<img src="https://github.com/kiyotd/kurage/assets/41136135/2e429270-6fa5-43f5-98be-de590d927688" width="25%" >
 
 ## インストール
 
 npm
 
 ```bash
-npm i @kiyotd/kurage
+npm i @kiyotd/kurage-utils
 ```
 
 yarn
 
 ```bash
-yarn add @kiyotd/kurage
+yarn add @kiyotd/kurage-utils
 ```
 
 CDN
 
 ```shell
-<script src="https://unpkg.com/@kiyotd/kurage@latest/dist/index.js"></script>
+<script src="https://unpkg.com/@kiyotd/kurage-utils@latest/dist/index.js"></script>
 ```
 
 ## ドキュメント
@@ -35,7 +35,7 @@ CDN
   数値を別の範囲にマッピング
 
     ```typescript
-    import { NumberUtils } from "@kiyotd/kurage";
+    import { NumberUtils } from "@kiyotd/kurage-utils";
     
     // 元の範囲が0から100で、新しい範囲が0から1の場合
     NumberUtil.map(50, 0, 100, 0, 1) // 0.5
@@ -48,7 +48,7 @@ CDN
 
   ケバブケースをキャメルケースに変換
     ```typescript
-    import { kebabCaseToCamelCase } from "@kiyotd/kurage";
+    import { kebabCaseToCamelCase } from "@kiyotd/kurage-utils";
     
     kebabCaseToCamelCase("set-user-name"); // setUserName
     ```
@@ -58,7 +58,7 @@ CDN
   キャメルケースをケバブケースに変換
 
     ```typescript
-    import { camelCaseToKebabCase } from "@kiyotd/kurage";
+    import { camelCaseToKebabCase } from "@kiyotd/kurage-utils";
     
     camelCaseToKebabCase("setUserName"); // set-user-name
     ```
@@ -68,7 +68,7 @@ CDN
   Emailアドレスのバリデーション
 
     ```typescript
-    import { isEmail } from "@kiyotd/kurage";
+    import { isEmail } from "@kiyotd/kurage-utils";
     
     isEmail("example@example.com"); // true
     isEmail("example@exam@ple.com"); // false
@@ -79,7 +79,7 @@ CDN
   IPv4アドレスのバリデーション
 
     ```typescript
-    import { isIPv4 } from "@kiyotd/kurage";
+    import { isIPv4 } from "@kiyotd/kurage-utils";
     
     isIPv4("255.255.255.255"); // true
     isIPv4("255.255.255.256"); // false
