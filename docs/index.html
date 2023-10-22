@@ -12,26 +12,45 @@
 <div class="col-content">
 <div class="tsd-page-title">
 <h2>@kiyotd/kurage</h2></div>
-<div class="tsd-panel tsd-typography"><a id="md:readme" class="tsd-anchor"></a><h1><a href="#md:readme">README</a></h1><p>JavaScript Utilities</p>
-<a id="md:installation" class="tsd-anchor"></a><h2><a href="#md:installation">Installation</a></h2><p>Using npm:</p>
+<div class="tsd-panel tsd-typography"><a id="md:kiyotdkurage" class="tsd-anchor"></a><h1><a href="#md:kiyotdkurage">@kiyotd/kurage</a></h1><p>再利用したい関数、いつの間にか漂ってしまうので集めておきます。</p>
+<a id="md:インストール" class="tsd-anchor"></a><h2><a href="#md:インストール">インストール</a></h2><p>npm</p>
 <pre><code class="language-bash"><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-2">i</span><span class="hl-1"> </span><span class="hl-2">@kiyotd/kurage</span>
 </code><button>Copy</button></pre>
-<p>Using yarn:</p>
+<p>yarn</p>
 <pre><code class="language-bash"><span class="hl-0">yarn</span><span class="hl-1"> </span><span class="hl-2">add</span><span class="hl-1"> </span><span class="hl-2">@kiyotd/kurage</span>
 </code><button>Copy</button></pre>
-<p>Using CDN:</p>
+<p>CDN</p>
 <pre><code class="language-shell"><span class="hl-1">&lt;script src=</span><span class="hl-2">&quot;https://unpkg.com/@kiyotd/kurage@latest/dist/index.js&quot;</span><span class="hl-1">&gt;&lt;/script&gt;</span>
 </code><button>Copy</button></pre>
-<a id="md:documentation" class="tsd-anchor"></a><h2><a href="#md:documentation">Documentation</a></h2><p><a href="https://kiyotd-utils-js.vercel.app/">docs</a></p>
-<a id="md:examples" class="tsd-anchor"></a><h2><a href="#md:examples">Examples</a></h2><a id="md:kebab-case-to-camelcase" class="tsd-anchor"></a><h4><a href="#md:kebab-case-to-camelcase">kebab-case to camelCase</a></h4><pre><code class="language-typescript"><span class="hl-3">import</span><span class="hl-1"> { </span><span class="hl-4">kebabCaseToCamelCase</span><span class="hl-1"> } </span><span class="hl-3">from</span><span class="hl-1"> </span><span class="hl-2">&quot;@kiyotd/kurage&quot;</span><span class="hl-1">;</span><br/><br/><span class="hl-0">kebabCaseToCamelCase</span><span class="hl-1">(</span><span class="hl-2">&quot;set-user-name&quot;</span><span class="hl-1">); </span><span class="hl-5">// setUserName</span>
+<a id="md:ドキュメント" class="tsd-anchor"></a><h2><a href="#md:ドキュメント">ドキュメント</a></h2><p><a href="https://kurage-utils.vercel.app/">kurage-utils.vercel.app</a></p>
+<a id="md:関数の例" class="tsd-anchor"></a><h2><a href="#md:関数の例">関数の例</a></h2><ul>
+<li><p>NumberUtils.map</p>
+<p>数値を別の範囲にマッピング</p>
+<pre><code class="language-typescript"><span class="hl-3">import</span><span class="hl-1"> { </span><span class="hl-4">NumberUtils</span><span class="hl-1"> } </span><span class="hl-3">from</span><span class="hl-1"> </span><span class="hl-2">&quot;@kiyotd/kurage&quot;</span><span class="hl-1">;</span><br/><br/><span class="hl-5">// 元の範囲が0から100で、新しい範囲が0から1の場合</span><br/><span class="hl-4">NumberUtil</span><span class="hl-1">.</span><span class="hl-0">map</span><span class="hl-1">(</span><span class="hl-6">50</span><span class="hl-1">, </span><span class="hl-6">0</span><span class="hl-1">, </span><span class="hl-6">100</span><span class="hl-1">, </span><span class="hl-6">0</span><span class="hl-1">, </span><span class="hl-6">1</span><span class="hl-1">) </span><span class="hl-5">// 0.5</span><br/><br/><span class="hl-5">// 元の範囲が0から100で、新しい範囲が0から10の場合</span><br/><span class="hl-4">NumberUtil</span><span class="hl-1">.</span><span class="hl-0">map</span><span class="hl-1">(</span><span class="hl-6">50</span><span class="hl-1">, </span><span class="hl-6">0</span><span class="hl-1">, </span><span class="hl-6">100</span><span class="hl-1">, </span><span class="hl-6">0</span><span class="hl-1">, </span><span class="hl-6">10</span><span class="hl-1">) </span><span class="hl-5">// 5</span>
 </code><button>Copy</button></pre>
-<a id="md:camelcase-to-kebab-case" class="tsd-anchor"></a><h4><a href="#md:camelcase-to-kebab-case">camelCase to kebab-case</a></h4><pre><code class="language-typescript"><span class="hl-3">import</span><span class="hl-1"> { </span><span class="hl-4">camelCaseToKebabCase</span><span class="hl-1"> } </span><span class="hl-3">from</span><span class="hl-1"> </span><span class="hl-2">&quot;@kiyotd/kurage&quot;</span><span class="hl-1">;</span><br/><br/><span class="hl-0">camelCaseToKebabCase</span><span class="hl-1">(</span><span class="hl-2">&quot;setUserName&quot;</span><span class="hl-1">); </span><span class="hl-5">// set-user-name</span>
+</li>
+<li><p>kebabCaseToCamelCase</p>
+<p>ケバブケースをキャメルケースに変換</p>
+<pre><code class="language-typescript"><span class="hl-3">import</span><span class="hl-1"> { </span><span class="hl-4">kebabCaseToCamelCase</span><span class="hl-1"> } </span><span class="hl-3">from</span><span class="hl-1"> </span><span class="hl-2">&quot;@kiyotd/kurage&quot;</span><span class="hl-1">;</span><br/><br/><span class="hl-0">kebabCaseToCamelCase</span><span class="hl-1">(</span><span class="hl-2">&quot;set-user-name&quot;</span><span class="hl-1">); </span><span class="hl-5">// setUserName</span>
 </code><button>Copy</button></pre>
-<a id="md:email-address-validation" class="tsd-anchor"></a><h4><a href="#md:email-address-validation">Email address validation</a></h4><pre><code class="language-typescript"><span class="hl-3">import</span><span class="hl-1"> { </span><span class="hl-4">isEmail</span><span class="hl-1"> } </span><span class="hl-3">from</span><span class="hl-1"> </span><span class="hl-2">&quot;@kiyotd/kurage&quot;</span><span class="hl-1">;</span><br/><br/><span class="hl-0">isEmail</span><span class="hl-1">(</span><span class="hl-2">&quot;example@example.com&quot;</span><span class="hl-1">); </span><span class="hl-5">// true</span><br/><span class="hl-0">isEmail</span><span class="hl-1">(</span><span class="hl-2">&quot;example@exam@ple.com&quot;</span><span class="hl-1">); </span><span class="hl-5">// false</span>
+</li>
+<li><p>camelCaseToKebabCase</p>
+<p>キャメルケースをケバブケースに変換</p>
+<pre><code class="language-typescript"><span class="hl-3">import</span><span class="hl-1"> { </span><span class="hl-4">camelCaseToKebabCase</span><span class="hl-1"> } </span><span class="hl-3">from</span><span class="hl-1"> </span><span class="hl-2">&quot;@kiyotd/kurage&quot;</span><span class="hl-1">;</span><br/><br/><span class="hl-0">camelCaseToKebabCase</span><span class="hl-1">(</span><span class="hl-2">&quot;setUserName&quot;</span><span class="hl-1">); </span><span class="hl-5">// set-user-name</span>
 </code><button>Copy</button></pre>
-<a id="md:ipv4-address-validation" class="tsd-anchor"></a><h4><a href="#md:ipv4-address-validation">IPv4 address validation</a></h4><pre><code class="language-typescript"><span class="hl-3">import</span><span class="hl-1"> { </span><span class="hl-4">isIPv4</span><span class="hl-1"> } </span><span class="hl-3">from</span><span class="hl-1"> </span><span class="hl-2">&quot;@kiyotd/kurage&quot;</span><span class="hl-1">;</span><br/><br/><span class="hl-0">isIPv4</span><span class="hl-1">(</span><span class="hl-2">&quot;255.255.255.255&quot;</span><span class="hl-1">); </span><span class="hl-5">// true</span><br/><span class="hl-0">isIPv4</span><span class="hl-1">(</span><span class="hl-2">&quot;255.255.255.256&quot;</span><span class="hl-1">); </span><span class="hl-5">// false</span>
+</li>
+<li><p>isEmail</p>
+<p>Emailアドレスのバリデーション</p>
+<pre><code class="language-typescript"><span class="hl-3">import</span><span class="hl-1"> { </span><span class="hl-4">isEmail</span><span class="hl-1"> } </span><span class="hl-3">from</span><span class="hl-1"> </span><span class="hl-2">&quot;@kiyotd/kurage&quot;</span><span class="hl-1">;</span><br/><br/><span class="hl-0">isEmail</span><span class="hl-1">(</span><span class="hl-2">&quot;example@example.com&quot;</span><span class="hl-1">); </span><span class="hl-5">// true</span><br/><span class="hl-0">isEmail</span><span class="hl-1">(</span><span class="hl-2">&quot;example@exam@ple.com&quot;</span><span class="hl-1">); </span><span class="hl-5">// false</span>
 </code><button>Copy</button></pre>
-<p>See the <a href="https://kiyotd-utils-js.vercel.app/">docs</a> for other functions.</p>
+</li>
+<li><p>isIPv4</p>
+<p>IPv4アドレスのバリデーション</p>
+<pre><code class="language-typescript"><span class="hl-3">import</span><span class="hl-1"> { </span><span class="hl-4">isIPv4</span><span class="hl-1"> } </span><span class="hl-3">from</span><span class="hl-1"> </span><span class="hl-2">&quot;@kiyotd/kurage&quot;</span><span class="hl-1">;</span><br/><br/><span class="hl-0">isIPv4</span><span class="hl-1">(</span><span class="hl-2">&quot;255.255.255.255&quot;</span><span class="hl-1">); </span><span class="hl-5">// true</span><br/><span class="hl-0">isIPv4</span><span class="hl-1">(</span><span class="hl-2">&quot;255.255.255.256&quot;</span><span class="hl-1">); </span><span class="hl-5">// false</span>
+</code><button>Copy</button></pre>
+</li>
+</ul>
+<p>他の関数は <a href="https://kurage-utils.vercel.app/">ドキュメント</a> を見てください。</p>
 <a id="md:license" class="tsd-anchor"></a><h2><a href="#md:license">License</a></h2><p>The MIT License</p>
 </div></div>
 <div class="col-sidebar">
@@ -55,34 +74,26 @@
 <ul>
 <li>
 <ul>
-<li><a href="#md:readme"><span>README</span></a></li>
+<li><a href="#md:kiyotdkurage"><span>@kiyotd/kurage</span></a></li>
 <li>
 <ul>
-<li><a href="#md:installation"><span>Installation</span></a></li>
-<li><a href="#md:documentation"><span>Documentation</span></a></li>
-<li><a href="#md:examples"><span>Examples</span></a></li>
-<li>
-<ul>
-<li><a href="#md:kebab-case-to-camelcase"><span>kebab-<wbr/>case to camel<wbr/>Case</span></a></li>
-<li>
-<ul>
-<li><a href="#md:camelcase-to-kebab-case"><span>camel<wbr/>Case to kebab-<wbr/>case</span></a></li>
-<li><a href="#md:email-address-validation"><span>Email address validation</span></a></li>
-<li><a href="#md:ipv4-address-validation"><span>IPv4 address validation</span></a></li></ul></li></ul></li>
+<li><a href="#md:インストール"><span>インストール</span></a></li>
+<li><a href="#md:ドキュメント"><span>ドキュメント</span></a></li>
+<li><a href="#md:関数の例"><span>関数の例</span></a></li>
 <li><a href="#md:license"><span>License</span></a></li></ul></li></ul></li></ul></div></details></div>
 <div class="site-menu">
 <nav class="tsd-navigation"><a href="modules.html" class="current"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-namespace)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-4-path"></rect><path d="M9.33 16V7.24H10.77L13.446 14.74C13.43 14.54 13.41 14.296 13.386 14.008C13.37 13.712 13.354 13.404 13.338 13.084C13.33 12.756 13.326 12.448 13.326 12.16V7.24H14.37V16H12.93L10.266 8.5C10.282 8.692 10.298 8.936 10.314 9.232C10.33 9.52 10.342 9.828 10.35 10.156C10.366 10.476 10.374 10.784 10.374 11.08V16H9.33Z" fill="var(--color-text)" id="icon-4-text"></path></svg><span>@kiyotd/kurage</span></a>
 <ul class="tsd-small-nested-navigation">
 <li><a href="classes/ArrayUtil.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-class)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-128-path"></rect><path d="M11.898 16.1201C11.098 16.1201 10.466 15.8961 10.002 15.4481C9.53803 15.0001 9.30603 14.3841 9.30603 13.6001V9.64012C9.30603 8.85612 9.53803 8.24012 10.002 7.79212C10.466 7.34412 11.098 7.12012 11.898 7.12012C12.682 7.12012 13.306 7.34812 13.77 7.80412C14.234 8.25212 14.466 8.86412 14.466 9.64012H13.386C13.386 9.14412 13.254 8.76412 12.99 8.50012C12.734 8.22812 12.37 8.09212 11.898 8.09212C11.426 8.09212 11.054 8.22412 10.782 8.48812C10.518 8.75212 10.386 9.13212 10.386 9.62812V13.6001C10.386 14.0961 10.518 14.4801 10.782 14.7521C11.054 15.0161 11.426 15.1481 11.898 15.1481C12.37 15.1481 12.734 15.0161 12.99 14.7521C13.254 14.4801 13.386 14.0961 13.386 13.6001H14.466C14.466 14.3761 14.234 14.9921 13.77 15.4481C13.306 15.8961 12.682 16.1201 11.898 16.1201Z" fill="var(--color-text)" id="icon-128-text"></path></svg><span>Array<wbr/>Util</span></a></li>
+<li><a href="classes/JsonUtil.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Json<wbr/>Util</span></a></li>
 <li><a href="classes/NumberUtil.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Number<wbr/>Util</span></a></li>
+<li><a href="classes/ObjectUtil.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-128-path"></use><use href="#icon-128-text"></use></svg><span>Object<wbr/>Util</span></a></li>
 <li><a href="functions/camelCaseToKebabCase.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-function)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6" id="icon-64-path"></rect><path d="M9.39 16V7.24H14.55V8.224H10.446V11.128H14.238V12.112H10.47V16H9.39Z" fill="var(--color-text)" id="icon-64-text"></path></svg><span>camel<wbr/>Case<wbr/>To<wbr/>Kebab<wbr/>Case</span></a></li>
 <li><a href="functions/getType.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg><span>get<wbr/>Type</span></a></li>
 <li><a href="functions/isEmail.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg><span>is<wbr/>Email</span></a></li>
 <li><a href="functions/isIPv4.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg><span>isIPv4</span></a></li>
 <li><a href="functions/isUserName.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg><span>is<wbr/>User<wbr/>Name</span></a></li>
-<li><a href="functions/jsonToObject.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg><span>json<wbr/>To<wbr/>Object</span></a></li>
-<li><a href="functions/kebabCaseToCamelCase.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg><span>kebab<wbr/>Case<wbr/>To<wbr/>Camel<wbr/>Case</span></a></li>
-<li><a href="functions/objectToJson.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg><span>object<wbr/>To<wbr/>Json</span></a></li></ul></nav></div></div></div>
+<li><a href="functions/kebabCaseToCamelCase.html"><svg class="tsd-kind-icon" width="24" height="24" viewBox="0 0 24 24"><use href="#icon-64-path"></use><use href="#icon-64-text"></use></svg><span>kebab<wbr/>Case<wbr/>To<wbr/>Camel<wbr/>Case</span></a></li></ul></nav></div></div></div>
 <div class="tsd-generator">
 <p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div>
 <div class="overlay"></div></body></html>
