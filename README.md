@@ -1,34 +1,32 @@
-# kurage-utils
+# Kurage Utils
 
 Collection of utility functions.
 
-<img src="https://github.com/kiyotd/kurage/assets/41136135/2e429270-6fa5-43f5-98be-de590d927688" width="25%" >
+<img src="https://github.com/kiyotd/kurage/assets/41136135/2e429270-6fa5-43f5-98be-de590d927688" width="100%" >
 
-## インストール
-
-npm
+## Installation
 
 ```bash
 npm i @kiyotd/kurage-utils
 ```
 
-yarn
-
 ```bash
 yarn add @kiyotd/kurage-utils
 ```
 
+```bash
+pnpm add @kiyotd/kurage-utils
+```
+
+<!--
 CDN
 
 ```shell
 <script src="https://unpkg.com/@kiyotd/kurage-utils@latest/dist/index.js"></script>
 ```
+-->
 
-## ドキュメント
-
-[kurage-utils.vercel.app](https://kurage-utils.vercel.app/)
-
-## 関数の例
+## Examples
 
 - NumberUtils.map
 
@@ -44,6 +42,7 @@ CDN
     NumberUtil.map(50, 0, 100, 0, 10) // 5
     ```
 
+<!--
 - kebabCaseToCamelCase
 
   ケバブケースをキャメルケースに変換
@@ -86,7 +85,14 @@ CDN
     ```
 
 他の関数は [ドキュメント](https://kurage-utils.vercel.app/) を参照してください。
+-->
+
+etc...
+
+## Documentation
+
+[kurage-utils.vercel.app](https://kurage-utils.vercel.app/)
 
 ## License
 
-The MIT License
+MIT
