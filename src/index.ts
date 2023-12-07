@@ -2,6 +2,7 @@ import ArrayUtil from "./class/util/ArrayUtil";
 import JsonUtil from "./class/util/JsonUtil";
 import NumberUtil from "./class/util/NumberUtil";
 import ObjectUtil from "./class/util/ObjectUtil";
+import { calculateRgbaForOpacity } from "./convert/string/calculateRgbaForOpacity";
 import { camelCaseToKebabCase } from "./convert/string/camelCaseToKebabCase";
 import { kebabCaseToCamelCase } from "./convert/string/kebabCaseToCamelCase";
 import { getType } from "./helper/getType";
@@ -16,6 +17,7 @@ export {
   ObjectUtil,
   camelCaseToKebabCase,
   kebabCaseToCamelCase,
+  calculateRgbaForOpacity,
   getType,
   isEmail,
   isIPv4,
