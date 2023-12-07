@@ -53,7 +53,7 @@ CDN
     calculateRgbaForOpacity('80,209,173', 0.75); // rgba(22,194,146,0.75)
    
     // "#50d1ad" に限りなく近い色で、透明度を 0.75 にした場合の RGBA 値を取得  
-    calculateRgbaForOpacity('#50d1ad', 0.8); // rgba(22,194,146,0.75)
+    calculateRgbaForOpacity('#50d1ad', 0.75); // rgba(22,194,146,0.75)
     ```
 
 <!--
