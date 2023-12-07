@@ -4,7 +4,7 @@
  * Converts a color with no transparency to a color with a specified transparency, as close as possible.
  *
  * @param {string} color ex: "80,209,173" or "#50d1ad"
- * @param {number} opacity 0 ~ 1.0
+ * @param {number} opacity 0 ~ 1.0, recommended 0.7 ~ 1.0
  *
  * @example
  *
